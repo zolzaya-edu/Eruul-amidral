@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Монголчуудын Эрүүл Амьдрах Ухаан</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f9f8;
+      color: #555;
+    }
+    header {
+      background: linear-gradient(to right, #3f51b5, #5c6bc0);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #eee;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #3f51b5;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .video, .quiz, .contact {
+      margin-top: 2rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    form label, form input, form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    button {
+      background: #5c6bc0;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Монголчуудын Эрүүл Амьдрах Ухаан</h1>
+    <p>Эртний уламжлал, эрүүл мэндийн зөв амьдралын хэв маяг</p>
+  </header>
+
+  <nav>
+    <a href="#about">Танилцуулга</a>
+    <a href="#video">Видео</a>
+    <a href="#quiz">Тест</a>
+    <a href="#contact">Холбоо барих</a>
+  </nav>
+
+  <section id="about">
+    <h2>Эрүүл амьдрах ухаан гэж юу вэ?</h2>
+    <p>Монголчууд эртнээс малчин аж ахуй, байгальд ойр амьдралаар эрүүл, тэнцвэртэй амьдрах арга ухааныг уламжлан хэрэглэж ирсэн. Үүнд идээ ундааны зохистой хэрэглээ, улиралд тохируулсан хөдөлгөөн, сэтгэл санааг зөв түвшинд барих гэх мэт олон зүйлс багтдаг.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mongolian_ger.jpg/640px-Mongolian_ger.jpg" alt="Монгол гэр" style="width:100%; border-radius: 8px; margin-top: 1rem;">
+  </section>
+
+  <section id="video" class="video">
+    <h2>Сургалтын видео</h2>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+  </section>
+
+  <section id="quiz" class="quiz">
+    <h2>Мэдлэг шалгах тест</h2>
+    <form>
+      <label>1. Монголчуудын эрүүл амьдрах гол зарчим юу вэ?</label>
+      <input type="text" placeholder="Хариултаа бичнэ үү">
+
+      <label>2. Ямар улиралд ямар идээ ундаа хэрэглэдэг вэ?</label>
+      <input type="text" placeholder="Хариултаа бичнэ үү">
+
+      <button type="submit">Илгээх</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Холбоо барих</h2>
+    <form>
+      <label>Нэр:</label>
+      <input type="text">
+
+      <label>Имэйл:</label>
+      <input type="email">
+
+      <label>Санал хүсэлт:</label>
+      <textarea rows="4"></textarea>
+
+      <button type="submit">Илгээх</button>
+    </form>
+  </section>
+</body>
+</html>
