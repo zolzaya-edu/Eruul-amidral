@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="mn">
 <head>
@@ -9,11 +8,12 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f9f8;
-      color: #555;
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
     header {
-      background: linear-gradient(to right, #3f51b5, #5c6bc0);
+      background: rgba(0, 0, 0, 0.6);
       color: white;
       padding: 2rem;
       text-align: center;
@@ -21,37 +21,54 @@
     nav {
       display: flex;
       justify-content: center;
-      background: #eee;
+      background: rgba(255, 255, 255, 0.2);
       padding: 1rem;
+      backdrop-filter: blur(10px);
     }
     nav a {
       margin: 0 1rem;
       text-decoration: none;
-      color: #3f51b5;
+      color: #fff;
       font-weight: bold;
     }
     section {
       padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+      border-radius: 12px;
     }
-    .video, .quiz, .contact {
+    .lesson, .contact, .other {
       margin-top: 2rem;
-      background: white;
+      background: rgba(255, 255, 255, 0.1);
       padding: 1rem;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
     iframe {
       width: 100%;
       height: 300px;
       border: none;
     }
+    img.lesson-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
     form label, form input, form textarea {
       display: block;
       width: 100%;
       margin-bottom: 1rem;
+      color: #fff;
+    }
+    input, textarea {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      color: #fff;
+      border-radius: 6px;
     }
     button {
-      background: #5c6bc0;
+      background: #ff9800;
       color: white;
       border: none;
       padding: 0.5rem 1rem;
@@ -63,38 +80,26 @@
 <body>
   <header>
     <h1>Монголчуудын Эрүүл Амьдрах Ухаан</h1>
-    <p>Эртний уламжлал, эрүүл мэндийн зөв амьдралын хэв маяг</p>
+    <p>Эртнээс уламжлалтай зөв амьдралын хэв маяг</p>
   </header>
 
   <nav>
     <a href="#about">Танилцуулга</a>
-    <a href="#video">Видео</a>
-    <a href="#quiz">Тест</a>
+    <a href="#lesson">Хичээл</a>
     <a href="#contact">Холбоо барих</a>
   </nav>
 
   <section id="about">
     <h2>Эрүүл амьдрах ухаан гэж юу вэ?</h2>
-    <p>Монголчууд эртнээс малчин аж ахуй, байгальд ойр амьдралаар эрүүл, тэнцвэртэй амьдрах арга ухааныг уламжлан хэрэглэж ирсэн. Үүнд идээ ундааны зохистой хэрэглээ, улиралд тохируулсан хөдөлгөөн, сэтгэл санааг зөв түвшинд барих гэх мэт олон зүйлс багтдаг.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mongolian_ger.jpg/640px-Mongolian_ger.jpg" alt="Монгол гэр" style="width:100%; border-radius: 8px; margin-top: 1rem;">
+    <p>Монголчууд эртнээс малчин аж ахуй, байгальд ойр амьдралаар эрүүл, тэнцвэртэй амьдрах арга ухааныг уламжлуулж хэрэглэж ирсэн. Үүнд хүнсний зохистой хэрэглээ, дөрвөн улиралд тохирсон амьдарлын хэв маяг, сэтгэл санаагаа удирдах гэх мэт олон зүйлс багтдаг.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mongolian_ger.jpg/640px-Mongolian_ger.jpg" alt="Монгол гэр" class="lesson-img">
   </section>
 
-  <section id="video" class="video">
-    <h2>Сургалтын видео</h2>
+  <section id="lesson" class="lesson">
+    <h2>Хичээл</h2>
+    <p>Доорх хичээлүүдээр дамжуулан уламжлалт эрүүл мэндийн мэдлэгээ нэмэгдүүлээрэй.</p>
+    <img src="https://cdn.pixabay.com/photo/2017/06/19/18/17/mongolia-2419573_1280.jpg" alt="Уламжлалт амьдрал" class="lesson-img">
     <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-  </section>
-
-  <section id="quiz" class="quiz">
-    <h2>Мэдлэг шалгах тест</h2>
-    <form>
-      <label>1. Монголчуудын эрүүл амьдрах гол зарчим юу вэ?</label>
-      <input type="text" placeholder="Хариултаа бичнэ үү">
-
-      <label>2. Ямар улиралд ямар идээ ундаа хэрэглэдэг вэ?</label>
-      <input type="text" placeholder="Хариултаа бичнэ үү">
-
-      <button type="submit">Илгээх</button>
-    </form>
   </section>
 
   <section id="contact" class="contact">
@@ -114,3 +119,4 @@
   </section>
 </body>
 </html>
+
